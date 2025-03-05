@@ -23,7 +23,7 @@ export default function ProfilePage() {
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/user");
+        const response = await axios.get("/api/user");
         setFetchedUser(response.data);
         setUserDetails((prev) => ({ ...prev, ...response.data }));
       } catch (error) {

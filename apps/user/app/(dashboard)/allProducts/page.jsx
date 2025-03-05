@@ -10,7 +10,7 @@ export default function AllProductsPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/product/getAllProducts")
+      .get("/api/product/getAllProducts")
       .then((response) => {
         setProducts(response.data);
       })

@@ -20,10 +20,10 @@ export default function OrdersPage() {
     const fetchData = async () => {
       try {
         // Fetch orders
-        const ordersResponse = await axios.get("http://localhost:3000/api/user/getAllOrders");
+        const ordersResponse = await axios.get("/api/user/getAllOrders");
         
         // Fetch all products
-        const productsResponse = await axios.get("http://localhost:3000/api/product/getAllProducts");
+        const productsResponse = await axios.get("/api/product/getAllProducts");
         
         setOrders(ordersResponse.data);
         setFilteredOrders(ordersResponse.data);

@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("http://localhost:3001/api/auth/signin");
+      router.push("/api/auth/signin");
     }
   }, [status, router]);
 

@@ -42,9 +42,9 @@ export const authOptions = {
   ],
   secret: process.env.JWT_SECRET || "secret",
   pages: {
-    signIn: "http://localhost:3000/auth/login",  // Custom login page
-    signOut: "http://localhost:3000/auth/login",
-    newUser: "http://localhost:3000/auth/signup", // Redirect here after user signs up (optional)
+    signIn: "/auth/login",  // Custom login page
+    signOut: "/auth/login",
+    newUser: "/auth/signup", // Redirect here after user signs up (optional)
   },
   callbacks: {
     async session({ token, session }) {
